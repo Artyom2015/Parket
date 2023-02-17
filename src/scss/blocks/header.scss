@@ -13,19 +13,25 @@
 
 .tell {
   display: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2C2C2C;
 }
 
 .messenger {
   display: none;
 }
 
-.navigation {
+.navigation-header {
   display: none;
 }
 
 @media screen and (min-width: 720px) {
   .header-row {
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr;
 
   }
 
@@ -53,20 +59,51 @@
     margin-right: 24px;
   }
 
+  .tell {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
   .header-row {
-    grid-template-columns: 3fr 6fr 2fr 2fr;
-  }
+    grid-template-columns: 2fr 4fr 2fr 2fr;
 
+  }
+}
+
+@media screen and (min-width: 1410px) {
   .burger-menu {
     display: none;
   }
 
-  .navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  .header-row {
+    grid-template-columns: 3fr 6fr 2fr 2fr;
   }
 
+  .navigation-header {
+    display: block;
+
+  }
+
+  .navigation-head {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  .navigation-head__link {
+    margin: 5px;
+  }
+  }
+
+@media screen and (min-width: 1920px) {
+  .navigation-head__link {
+    margin: 20px;
+  }
 }
